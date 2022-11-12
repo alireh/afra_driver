@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="waitingRequestPanel">
+            <connections>
+                <outlet property="addressLabel" destination="Cc5-gk-P2w" id="fKF-qQ-vvh"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="UO3-et-VQM"/>
+                <outlet property="driverTimeTextView" destination="WPD-J3-Tdh" id="0X4-rn-3vc"/>
+                <outlet property="titleLabel" destination="JWP-bk-Vrn" id="Omz-XY-xPQ"/>
+                <outlet property="topView" destination="we2-mW-jbq" id="DwQ-6B-yUd"/>
+                <outlet property="trashPanel" destination="7Tg-Vn-DFC" id="ODz-jv-8cJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-gk-P2w">
+                    <rect key="frame" x="15" y="70" width="345" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="VI7-nJ-kW2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="we2-mW-jbq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عنوان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-bk-Vrn">
+                            <rect key="frame" x="168.5" y="22.5" width="38.5" height="20.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="JWP-bk-Vrn" firstAttribute="centerX" secondItem="we2-mW-jbq" secondAttribute="centerX" id="24H-gN-rSe"/>
+                        <constraint firstItem="JWP-bk-Vrn" firstAttribute="centerY" secondItem="we2-mW-jbq" secondAttribute="centerY" id="FDn-SV-ENf"/>
+                        <constraint firstAttribute="height" constant="65" id="l4L-Pb-QYf"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Label" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-J3-Tdh">
+                    <rect key="frame" x="10" y="125" width="355" height="65"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="pIy-Z9-k3b"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-Vn-DFC">
+                    <rect key="frame" x="10" y="210" width="355" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" identifier="trashPanelHeightConstraint" id="eke-O5-ITI"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="746-Vc-1vW"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.87450980392156863" green="0.94901960784313721" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WPD-J3-Tdh" firstAttribute="top" secondItem="Cc5-gk-P2w" secondAttribute="bottom" constant="10" id="2EG-77-y1e"/>
+                <constraint firstItem="7Tg-Vn-DFC" firstAttribute="top" secondItem="WPD-J3-Tdh" secondAttribute="bottom" constant="20" identifier="trashPanelHeightConstraint" id="4Yk-xB-pJB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="we2-mW-jbq" secondAttribute="trailing" id="8dD-GV-rkq"/>
+                <constraint firstItem="we2-mW-jbq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="900-y7-aMo"/>
+                <constraint firstItem="we2-mW-jbq" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Fuf-D1-OCH"/>
+                <constraint firstItem="Cc5-gk-P2w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Vae-Pu-8De"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cc5-gk-P2w" secondAttribute="trailing" constant="15" id="be2-YW-R8Z"/>
+                <constraint firstItem="7Tg-Vn-DFC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="cvZ-Rt-ZG4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Tg-Vn-DFC" secondAttribute="trailing" constant="10" id="fl1-xI-ax3"/>
+                <constraint firstItem="Cc5-gk-P2w" firstAttribute="top" secondItem="we2-mW-jbq" secondAttribute="bottom" constant="5" id="lH6-9i-amd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WPD-J3-Tdh" secondAttribute="trailing" constant="10" id="nmz-6t-ba6"/>
+                <constraint firstItem="WPD-J3-Tdh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="osf-Lq-RjB"/>
+                <constraint firstItem="we2-mW-jbq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sP2-fH-JGR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.575712143928037"/>
+        </view>
+    </objects>
+</document>

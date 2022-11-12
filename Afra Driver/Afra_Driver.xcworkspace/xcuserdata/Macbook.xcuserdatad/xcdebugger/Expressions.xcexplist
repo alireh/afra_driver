@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ActiveRequestsViewController.tableView(_:heightForRowAt:):ActiveRequestsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "requests[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "trashAmountLabel.loadViewFromNib():trashAmountLabel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nib.instantiate(withOwner: self,options: nil).first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BackPanel.title.setter:BackPanel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.headerLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "activeRequestPanel.trashes.setter:activeRequestPanel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "trashes">
+            </PersistentString>
+            <PersistentString
+               value = "panelHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

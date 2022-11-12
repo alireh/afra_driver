@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconButton" customModule="Farazist" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="Ssb-AU-WqW" id="TSH-Ha-8My"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Umo-yi-9ro"/>
+                <outlet property="icon" destination="M0D-IG-pSs" id="KTD-dt-wqU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIButton">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egn-sH-4cU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <connections>
+                        <action selector="methodButton:" destination="-1" eventType="touchUpInside" id="LTP-dI-zbH"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M0D-IG-pSs">
+                    <rect key="frame" x="15" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="M0D-IG-pSs" secondAttribute="height" multiplier="1:1" id="1Tt-St-M88"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssb-AU-WqW" customClass="UILabelDeviceClass" customModule="Farazist" customModuleProvider="target">
+                    <rect key="frame" x="50" y="10" width="250" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="spm-Ql-lan"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29529309050000002" green="0.47328006220000002" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ssb-AU-WqW" firstAttribute="height" secondItem="M0D-IG-pSs" secondAttribute="height" id="4kB-bd-lqL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Egn-sH-4cU" secondAttribute="trailing" id="8Es-Pq-Blm"/>
+                <constraint firstItem="M0D-IG-pSs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DXA-mM-s1q"/>
+                <constraint firstItem="M0D-IG-pSs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Iea-QE-c0p"/>
+                <constraint firstItem="Ssb-AU-WqW" firstAttribute="centerY" secondItem="M0D-IG-pSs" secondAttribute="centerY" id="JrU-sf-Z0c"/>
+                <constraint firstItem="Egn-sH-4cU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Xek-VS-Ohk"/>
+                <constraint firstItem="M0D-IG-pSs" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="eWA-C8-A24"/>
+                <constraint firstItem="Ssb-AU-WqW" firstAttribute="leading" secondItem="M0D-IG-pSs" secondAttribute="trailing" constant="15" id="hvq-Ol-7WA"/>
+                <constraint firstItem="Egn-sH-4cU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qnA-WT-39m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Egn-sH-4cU" secondAttribute="bottom" id="sDd-ie-28O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <action selector="methodButton:" destination="-1" eventType="valueChanged" id="qgz-XU-249"/>
+            </connections>
+            <point key="canvasLocation" x="32.799999999999997" y="367.91604197901052"/>
+        </view>
+    </objects>
+</document>
